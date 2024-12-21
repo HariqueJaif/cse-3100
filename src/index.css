@@ -1,32 +1,75 @@
-.layout {
+
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.filters {
+  margin: 20px auto;
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  gap: 10px;
+  justify-content: center;
 }
 
-header {
-  padding: 1em;
+.filters input[type="text"],
+.filters select {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-main {
-  flex: 1;
-  padding: 1em;
-}
-footer {
-  padding: 1em;
-  text-align: center;
+/* Cats Container */
+.cats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
 }
 
 .cat-card {
+  background-color: #ffffff;
   border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  margin: 10px;
   text-align: center;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  padding: 15px;
 }
 
-.cat-info {
-  background: #f8f9fa;
-  border-radius: 4px;
+.cat-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.cat-info h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.cat-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .cat-card {
+    width: 90%;
+  }
 }

@@ -1,9 +1,10 @@
+
 import { Link, Outlet } from 'react-router-dom';
 
 const BaseLayout = () => {
   return (
     <div className="layout">
-      <header className="d-flex align-items-center bg-light">
+      <header className="d-flex align-items-center bg-light" style={{ padding: '0 20px' }}>
         <h1>
           <Link className="text-decoration-none text-dark" to="/">
             Purrfect Adoption
