@@ -63,7 +63,7 @@ export default function AvailableCats() {
 
   return (
     <section className="text-center mt-4">
-      {/* Header with added padding */}
+  
       <div className="header-container" style={{ padding: '0 20px' }}>
         <h2>Available Cats</h2>
         <p>Meet our adorable cats looking for their forever home!</p>
